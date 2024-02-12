@@ -1,10 +1,10 @@
-# Title (replace with your title)
+# Title (Breaking Down A Hex Value Regex)
 
-Introductory paragraph (replace this with your text)
+This guide will help clarify the regex pattern used to validate hexadecimal color code values. The regex '/^#?([a-f0-9]{6}|[a-f0-9]{3})$/' is used in web design applications to assist with styling. After reviewing this regex tutorial you'll understand the patterns role in web development. 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+We will break down the the regex pattern to reveal how the expression distinguishes six-digit and three-digit hex codes, which is essential in website aesthetics. 
 
 ## Table of Contents
 

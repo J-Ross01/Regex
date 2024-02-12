@@ -24,9 +24,19 @@ We will break down the the regex pattern to reveal how the expression distinguis
 
 ### Anchors
 
+- The ^ anchor is placed at the very beginning of the regex pattern.
+- Its role is to assert that any match must begin at the start of the string.
+- This means that the regex engine will not look for a match in the middle or at the end of the string; it will only consider a match valid if it starts from the beginning.
+
 ### Quantifiers
 
+- '?','{6}', & '{3}' these are the quantifiers.
+- '?' this is applied to the '#' character which means that the '#' can appear or not appear in the beginning of the hex code. 
+- '{6}' & '{3}' the preceding hexadecimal characters must appear exactly 6 or 3 times. 
+
 ### OR Operator
+
+- '|' this is a pipe which acts as an OR operator. 
 
 ### Character Classes
 

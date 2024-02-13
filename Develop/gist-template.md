@@ -24,7 +24,7 @@ We will break down the the regex pattern to reveal how the expression distinguis
 
 ### Anchors
 
-- The ^ anchor is placed at the very beginning of the regex pattern.
+- The '^' anchor is placed at the very beginning of the regex pattern.
 - Its role is to assert that any match must begin at the start of the string.
 - This means that the regex engine will not look for a match in the middle or at the end of the string; it will only consider a match valid if it starts from the beginning.
 
@@ -37,23 +37,56 @@ We will break down the the regex pattern to reveal how the expression distinguis
 ### OR Operator
 
 - '|' this is a pipe which acts as an OR operator. 
+- This makes the pattern versatile in the since that it allows the regex to match either six or three hexadecimal characters. 
 
 ### Character Classes
 
+- The character classes are defined in the square brackets '[]'. 
+- '[a-f0-9]' this is the chracter class that is used. When the combined they math any single hexadecimal character. 
+- 'a-f' is the range of lowercase letters. 'a' represents 10 in decimal and 'f' represents 15 in decimal, which covers the whole range of possible values in a single hexadecimal digit. 
+- '0-9' is the range of numbers from '0' to '9'. This will cover the numerical portion of the hexadecimal digits. 
+
 ### Flags
+
+- There are no flags in this regex, however that means that this expression operates in a case-sensitive mode matching only the lower-case characters 'a-f'. 
+- This also means that the anchors are the start and end of the expression not individual lines.
 
 ### Grouping and Capturing
 
+- The parentheses '()' creates a group within the regex and captures the part of the string that matches the group for later use. 
+- Grouping is useful when applying quantifiers to a sequence of characters or when using alternation, which is '|' in this case, to match more than one pattern. 
+- The parenthesis capture the matched hex value being either 6 or 3 hexadecimal characters. 
+
 ### Bracket Expressions
+
+- The bracket expression in my regex is explained in my (#character-classes) section. 
+- Going into further details, on my bracket expression in the regex, it is used in an efficient manner to include all valid characters for a hexadecimal digit. 
+- These bracket expressions are used to provide felxibility in specifying a range of characters to match. 
+- This is crucial for accurately validating hexadecimal numbers. 
 
 ### Greedy and Lazy Match
 
+- Greedy matches try to match as much of the string as possible while still conforming to the regex pattern. 
+- Lazy matches match as little of the string as possible. 
+- This regex pattern does not apply a greedy or lazy match neccesarily. 
+
 ### Boundaries
+
+- The anchor characters are the boundaries for the regex. It defines both the beginning and the end of the expression. 
+- The start of the string anchor '^' asserts that the match must start at the beginning of the string. 
+- The end of the string anchor '$' asserts that the match must occur at the end of the string. 
 
 ### Back-references
 
+- There are no back references in this regex pattern. 
+- However, the use of back references reuse part of the match from an earlier capturing group, and can help identify repeated or mirrored patterns within a string. 
+
 ### Look-ahead and Look-behind
+
+- There is no use for look-ahead and look-behind assertions in this regex.
+- If we were to add a look-ahead assertion to the pattern it might be used to match a hex value only if it's followed by a specified pattern or character, without including the pattern/character in the match. 
+- A look-behind assertion may be used if the hax value needed to be perceded dy a specific pattern for the match to be validated. 
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+I am currently new to the world of programming and figured that ine if the best ways to learn an expression is to try and teach it, so thank you for viewing this gist and see more of my projects at https://github.com/J-Ross01. 

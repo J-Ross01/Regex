@@ -4,7 +4,7 @@ This guide will help clarify the regex pattern used to validate hexadecimal colo
 
 ## Summary
 
-We will break down the the regex pattern to reveal how the expression distinguishes six-digit and three-digit hex codes, which is essential in website aesthetics. 
+We will break down the the regex pattern to reveal how the expression distinguishes six-digit and three-digit hex codes, which is essential in website aesthetics. Here is the expression: '/^#?([a-f0-9]{6}|[a-f0-9]{3})$/'. 
 
 ## Table of Contents
 
@@ -89,4 +89,10 @@ We will break down the the regex pattern to reveal how the expression distinguis
 
 ## Author
 
-I am currently new to the world of programming and figured that ine if the best ways to learn an expression is to try and teach it, so thank you for viewing this gist and see more of my projects at https://github.com/J-Ross01. 
+I am currently new to the world of programming, and figured that one of the best ways to learn an expression is to try and teach it, so thank you for viewing this gist and see more of my projects at https://github.com/J-Ross01. 
+
+## Sources
+- https://stackoverflow.com/questions/9221362/regular-expression-for-a-hexadecimal-number
+- https://medium.com/@harmoniacodes/using-regular-expressions-to-check-for-valid-hex-values-672eb089b5b0
+- https://www.geeksforgeeks.org/how-to-validate-hexadecimal-color-code-using-regular-expression/
+- https://www.youtube.com/watch?v=7DG3kCDx53c
